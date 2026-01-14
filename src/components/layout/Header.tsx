@@ -1,5 +1,3 @@
-import { Mountain } from 'lucide-react';
-
 interface HeaderProps {
   onNavigate: (section: string) => void;
   currentSection: string;
@@ -18,13 +16,24 @@ export default function Header({ onNavigate, currentSection }: HeaderProps) {
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => onNavigate('inicio')}>
-            <Mountain className="h-8 w-8 text-amber-700" />
+          <a 
+            href="/" 
+            className="flex items-center space-x-3 cursor-pointer hover:opacity-80 transition-opacity"
+            onClick={(e) => {
+              e.preventDefault();
+              onNavigate('inicio');
+            }}
+          >
+            <img 
+              src="/logo.svg" 
+              alt="Museo Geológico Virtual Logo" 
+              className="h-8 w-8"
+            />
             <div>
               <h1 className="text-xl font-bold text-gray-900">Museo Geológico Virtual</h1>
               <p className="text-xs text-gray-500">INHGEOMIN Honduras</p>
             </div>
-          </div>
+          </a>
 
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
