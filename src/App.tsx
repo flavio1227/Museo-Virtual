@@ -29,6 +29,12 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      <a
+        href="https://flavio1227.github.io/SIGEM1.1/"
+        className="fixed top-4 left-4 z-50 inline-block px-3 py-2 bg-white border border-gray-200 rounded-lg shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors"
+      >
+        SIGEM
+      </a>
       <Header onNavigate={setCurrentSection} currentSection={currentSection} />
 
       <main className="flex-grow">

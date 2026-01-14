@@ -27,7 +27,7 @@ export default function Header({ onNavigate, currentSection }: HeaderProps) {
             <img 
               src={`${import.meta.env.BASE_URL}logo.svg`}
               alt="Museo Geológico Virtual Logo" 
-              className="h-16 w-16"
+              className="h-12 w-12"
             />
             <div>
               <h1 className="text-xl font-bold text-gray-900">Museo Geológico Virtual</h1>
