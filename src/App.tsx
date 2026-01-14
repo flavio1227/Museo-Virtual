@@ -31,7 +31,8 @@ function App() {
     <div className="min-h-screen bg-white flex flex-col">
       <a
         href="https://flavio1227.github.io/SIGEM1.1/"
-        className="fixed top-4 left-4 z-50 inline-block px-3 py-2 bg-white border border-gray-200 rounded-lg shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors"
+        className="fixed top-3 left-3 z-[60] inline-block px-2.5 py-1.5 bg-white/95 backdrop-blur-sm border border-gray-300/50 rounded-md shadow-sm text-xs font-medium text-gray-600 hover:text-gray-900 hover:bg-white hover:border-gray-400/60 transition-all duration-200"
+        style={{ WebkitBackdropFilter: 'blur(8px)' }}
       >
         SIGEM
       </a>
