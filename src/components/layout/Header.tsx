@@ -18,17 +18,12 @@ export default function Header({ onNavigate, currentSection }: HeaderProps) {
         <div className="flex items-center justify-between h-16">
           <a 
             href="/" 
-            className="flex items-center space-x-3 cursor-pointer hover:opacity-80 transition-opacity"
+            className="flex items-center cursor-pointer hover:opacity-80 transition-opacity"
             onClick={(e) => {
               e.preventDefault();
               onNavigate('inicio');
             }}
           >
-            <img 
-              src={`${import.meta.env.BASE_URL}logo.svg`}
-              alt="Museo Geológico Virtual Logo" 
-              className="h-12 w-12"
-            />
             <div>
               <h1 className="text-xl font-bold text-gray-900">Museo Geológico Virtual</h1>
               <p className="text-xs text-gray-500">INHGEOMIN Honduras</p>
