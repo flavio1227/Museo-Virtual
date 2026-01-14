@@ -18,7 +18,7 @@ export default function Header({ onNavigate, currentSection }: HeaderProps) {
         <div className="flex items-center justify-between h-16">
           <a 
             href="/" 
-            className="flex items-center cursor-pointer hover:opacity-80 transition-opacity"
+            className="flex items-center cursor-pointer hover:opacity-80 transition-opacity pl-20 sm:pl-24"
             onClick={(e) => {
               e.preventDefault();
               onNavigate('inicio');
